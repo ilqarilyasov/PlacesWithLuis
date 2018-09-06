@@ -20,6 +20,7 @@
 		82FE1572214197900036CD35 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE1571214197900036CD35 /* PlacesTableViewController.swift */; };
 		82FE1574214197E70036CD35 /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE1573214197E70036CD35 /* VisitedPlacesViewController.swift */; };
 		82FE15762141994A0036CD35 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE15752141994A0036CD35 /* PlaceController.swift */; };
+		82FE157921419CEB0036CD35 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE157821419CEB0036CD35 /* PlacesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		82FE1571214197900036CD35 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		82FE1573214197E70036CD35 /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlacesViewController.swift; sourceTree = "<group>"; };
 		82FE15752141994A0036CD35 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
+		82FE157821419CEB0036CD35 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		82FE154E21418AB10036CD35 /* PlacesWithLuis */ = {
 			isa = PBXGroup;
 			children = (
+				82FE157A21419D060036CD35 /* Protocol */,
 				82FE156A214195540036CD35 /* Model */,
 				82FE15772141994F0036CD35 /* Model Controller */,
 				82FE156221418C3E0036CD35 /* Storyboard */,
@@ -126,6 +129,14 @@
 				82FE15752141994A0036CD35 /* PlaceController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		82FE157A21419D060036CD35 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				82FE157821419CEB0036CD35 /* PlacesPresenter.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82FE156C214197030036CD35 /* PlacesTabBarController.swift in Sources */,
+				82FE157921419CEB0036CD35 /* PlacesPresenter.swift in Sources */,
 				82FE15762141994A0036CD35 /* PlaceController.swift in Sources */,
 				82FE155021418AB10036CD35 /* AppDelegate.swift in Sources */,
 				82FE1569214195510036CD35 /* Place.swift in Sources */,

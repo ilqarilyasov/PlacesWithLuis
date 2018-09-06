@@ -8,8 +8,10 @@
 
 import UIKit
 
-class CreateNewPlacesViewController: UIViewController {
+class CreateNewPlacesViewController: UIViewController, PlacesPresenter {
 
+    var placeController: PlaceContoller?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
