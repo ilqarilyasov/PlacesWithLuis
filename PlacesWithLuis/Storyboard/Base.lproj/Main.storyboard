@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ioR-eJ-NQk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -75,18 +75,20 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ioR-eJ-NQk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pb7-gG-Nc3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Oeb-Nc-IYJ"/>
+                        <segue destination="0ll-UX-jUv" kind="relationship" relationship="viewControllers" id="1g5-kD-bAA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSl-db-Vsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1002" y="528"/>
         </scene>
-        <!--View Controller-->
+        <!--Places-->
         <scene sceneID="Y1m-cj-gUH">
             <objects>
                 <viewController id="0ll-UX-jUv" sceneMemberID="viewController">
@@ -95,16 +97,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zdS-O5-Eez">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AN6-iN-i6A">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
                                         <connections>
                                             <segue destination="ZKc-MK-1gj" kind="embed" identifier="MapViewSegue" id="9tZ-AV-UqD"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wh-c4-faw">
-                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                        <rect key="frame" x="0.0" y="299" width="375" height="299"/>
                                         <connections>
                                             <segue destination="kJ3-Qj-axw" kind="embed" identifier="PlacesTableSegue" id="apJ-nt-Khp"/>
                                         </connections>
@@ -121,6 +123,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DP0-1m-UdC"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Places" id="8uS-Nw-bPe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1x-fG-ekY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
