@@ -10,28 +10,24 @@ import UIKit
 
 class CreateNewPlacesViewController: UIViewController, PlacesPresenter {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var latitudeTextField: UITextField!
+    @IBOutlet weak var longituteTextField: UITextField!
+    
     var placeController: PlaceContoller?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func savePlaceButtonAction(_ sender: Any) {
+        guard let name = nameTextField.text,
+              let latitudeStr = latitudeTextField.text,
+              let latitude = Double(latitudeStr),
+              let longitudeStr = longituteTextField.text,
+              let longitude = Double(longitudeStr) else { return }
+        
+        placeController?.createPlace(with: name, latitude: latitude, longitude: longitude)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

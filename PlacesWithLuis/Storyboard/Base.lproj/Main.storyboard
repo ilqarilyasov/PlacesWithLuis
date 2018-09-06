@@ -20,7 +20,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zTS-5Y-P3T">
-                                <rect key="frame" x="16" y="162" width="343" height="30"/>
+                                <rect key="frame" x="16" y="121" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude from -90 to 90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ca6-Fo-Yex">
+                                <rect key="frame" x="16" y="159" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -37,33 +43,35 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save Places"/>
+                                <connections>
+                                    <action selector="savePlaceButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="umB-q9-5Ed"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude from -90 to 90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ca6-Fo-Yex">
-                                <rect key="frame" x="16" y="124" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zTS-5Y-P3T" firstAttribute="leading" secondItem="4Fu-7x-K7w" secondAttribute="leading" id="1Hm-4J-n5j"/>
-                            <constraint firstItem="ca6-Fo-Yex" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="6Cu-PL-Dmw"/>
-                            <constraint firstItem="4Fu-7x-K7w" firstAttribute="trailing" secondItem="SgG-N6-Lan" secondAttribute="trailing" id="7x4-B8-QDJ"/>
-                            <constraint firstItem="SgG-N6-Lan" firstAttribute="top" secondItem="4Fu-7x-K7w" secondAttribute="bottom" constant="8" symbolic="YES" id="Fwr-Lp-x4S"/>
-                            <constraint firstItem="zTS-5Y-P3T" firstAttribute="top" secondItem="ca6-Fo-Yex" secondAttribute="bottom" constant="8" symbolic="YES" id="JqA-P6-PGI"/>
-                            <constraint firstItem="ca6-Fo-Yex" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LKu-5d-ccr"/>
-                            <constraint firstItem="ca6-Fo-Yex" firstAttribute="leading" secondItem="zTS-5Y-P3T" secondAttribute="leading" id="Pqq-TW-RpL"/>
-                            <constraint firstItem="ca6-Fo-Yex" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RoF-0h-O7F"/>
-                            <constraint firstItem="zTS-5Y-P3T" firstAttribute="trailing" secondItem="4Fu-7x-K7w" secondAttribute="trailing" id="Skt-Ti-qGI"/>
-                            <constraint firstItem="ca6-Fo-Yex" firstAttribute="trailing" secondItem="zTS-5Y-P3T" secondAttribute="trailing" id="X1Q-nc-ZKi"/>
-                            <constraint firstItem="4Fu-7x-K7w" firstAttribute="leading" secondItem="SgG-N6-Lan" secondAttribute="leading" id="e7t-D1-1ZC"/>
-                            <constraint firstItem="4Fu-7x-K7w" firstAttribute="top" secondItem="zTS-5Y-P3T" secondAttribute="bottom" constant="8" symbolic="YES" id="yTz-3h-Hll"/>
+                            <constraint firstItem="zTS-5Y-P3T" firstAttribute="leading" secondItem="ca6-Fo-Yex" secondAttribute="leading" id="1tF-GC-waV"/>
+                            <constraint firstItem="4Fu-7x-K7w" firstAttribute="top" secondItem="ca6-Fo-Yex" secondAttribute="bottom" constant="11" id="5vN-GO-cNy"/>
+                            <constraint firstItem="zTS-5Y-P3T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="Dta-vN-L7a"/>
+                            <constraint firstItem="zTS-5Y-P3T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EQQ-UU-enG"/>
+                            <constraint firstItem="4Fu-7x-K7w" firstAttribute="leading" secondItem="SgG-N6-Lan" secondAttribute="leading" id="LAc-Ro-aqc"/>
+                            <constraint firstItem="ca6-Fo-Yex" firstAttribute="leading" secondItem="4Fu-7x-K7w" secondAttribute="leading" id="Ld4-gq-zdd"/>
+                            <constraint firstItem="ca6-Fo-Yex" firstAttribute="trailing" secondItem="4Fu-7x-K7w" secondAttribute="trailing" id="RA4-vH-Vnj"/>
+                            <constraint firstItem="SgG-N6-Lan" firstAttribute="top" secondItem="4Fu-7x-K7w" secondAttribute="bottom" constant="8" symbolic="YES" id="i63-bM-wJM"/>
+                            <constraint firstItem="ca6-Fo-Yex" firstAttribute="top" secondItem="zTS-5Y-P3T" secondAttribute="bottom" constant="8" symbolic="YES" id="or4-tH-T27"/>
+                            <constraint firstItem="zTS-5Y-P3T" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pI0-2h-LSp"/>
+                            <constraint firstItem="zTS-5Y-P3T" firstAttribute="trailing" secondItem="ca6-Fo-Yex" secondAttribute="trailing" id="sTO-ku-H1x"/>
+                            <constraint firstItem="4Fu-7x-K7w" firstAttribute="trailing" secondItem="SgG-N6-Lan" secondAttribute="trailing" id="t6j-8Y-xM8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Location" id="2dl-KP-4DW"/>
                     <navigationItem key="navigationItem" id="kIN-jO-aFt"/>
+                    <connections>
+                        <outlet property="latitudeTextField" destination="ca6-Fo-Yex" id="KCJ-0e-Drm"/>
+                        <outlet property="longituteTextField" destination="4Fu-7x-K7w" id="hoM-b9-ixm"/>
+                        <outlet property="nameTextField" destination="zTS-5Y-P3T" id="CHT-Jt-Scv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
