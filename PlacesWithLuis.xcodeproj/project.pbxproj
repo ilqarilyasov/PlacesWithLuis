@@ -21,6 +21,7 @@
 		82FE1574214197E70036CD35 /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE1573214197E70036CD35 /* VisitedPlacesViewController.swift */; };
 		82FE15762141994A0036CD35 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE15752141994A0036CD35 /* PlaceController.swift */; };
 		82FE157921419CEB0036CD35 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE157821419CEB0036CD35 /* PlacesPresenter.swift */; };
+		82FE157C2141BAD80036CD35 /* PlaceSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE157B2141BAD80036CD35 /* PlaceSelectionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		82FE1573214197E70036CD35 /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlacesViewController.swift; sourceTree = "<group>"; };
 		82FE15752141994A0036CD35 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 		82FE157821419CEB0036CD35 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
+		82FE157B2141BAD80036CD35 /* PlaceSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSelectionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				82FE157821419CEB0036CD35 /* PlacesPresenter.swift */,
+				82FE157B2141BAD80036CD35 /* PlaceSelectionDelegate.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				82FE1569214195510036CD35 /* Place.swift in Sources */,
 				82FE1570214197760036CD35 /* MapViewController.swift in Sources */,
 				82FE156E2141974A0036CD35 /* CreateNewPlacesViewController.swift in Sources */,
+				82FE157C2141BAD80036CD35 /* PlaceSelectionDelegate.swift in Sources */,
 				82FE1574214197E70036CD35 /* VisitedPlacesViewController.swift in Sources */,
 				82FE1572214197900036CD35 /* PlacesTableViewController.swift in Sources */,
 			);
