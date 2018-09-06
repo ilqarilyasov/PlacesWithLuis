@@ -14,6 +14,11 @@
 		82FE156521418FFD0036CD35 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FE156421418FFD0036CD35 /* MapView.storyboard */; };
 		82FE1567214191030036CD35 /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FE1566214191030036CD35 /* PlacesTable.storyboard */; };
 		82FE1569214195510036CD35 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE1568214195510036CD35 /* Place.swift */; };
+		82FE156C214197030036CD35 /* PlacesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE156B214197030036CD35 /* PlacesTabBarController.swift */; };
+		82FE156E2141974A0036CD35 /* CreateNewPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE156D2141974A0036CD35 /* CreateNewPlacesViewController.swift */; };
+		82FE1570214197760036CD35 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE156F214197760036CD35 /* MapViewController.swift */; };
+		82FE1572214197900036CD35 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE1571214197900036CD35 /* PlacesTableViewController.swift */; };
+		82FE1574214197E70036CD35 /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE1573214197E70036CD35 /* VisitedPlacesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		82FE156421418FFD0036CD35 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		82FE1566214191030036CD35 /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
 		82FE1568214195510036CD35 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		82FE156B214197030036CD35 /* PlacesTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlacesTabBarController.swift; path = "PlacesWithLuis/View Controller/PlacesTabBarController.swift"; sourceTree = SOURCE_ROOT; };
+		82FE156D2141974A0036CD35 /* CreateNewPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlacesViewController.swift; sourceTree = "<group>"; };
+		82FE156F214197760036CD35 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		82FE1571214197900036CD35 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		82FE1573214197E70036CD35 /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlacesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,11 @@
 		82FE156321418C460036CD35 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				82FE156B214197030036CD35 /* PlacesTabBarController.swift */,
+				82FE156D2141974A0036CD35 /* CreateNewPlacesViewController.swift */,
+				82FE1573214197E70036CD35 /* VisitedPlacesViewController.swift */,
+				82FE156F214197760036CD35 /* MapViewController.swift */,
+				82FE1571214197900036CD35 /* PlacesTableViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -175,8 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FE156C214197030036CD35 /* PlacesTabBarController.swift in Sources */,
 				82FE155021418AB10036CD35 /* AppDelegate.swift in Sources */,
 				82FE1569214195510036CD35 /* Place.swift in Sources */,
+				82FE1570214197760036CD35 /* MapViewController.swift in Sources */,
+				82FE156E2141974A0036CD35 /* CreateNewPlacesViewController.swift in Sources */,
+				82FE1574214197E70036CD35 /* VisitedPlacesViewController.swift in Sources */,
+				82FE1572214197900036CD35 /* PlacesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

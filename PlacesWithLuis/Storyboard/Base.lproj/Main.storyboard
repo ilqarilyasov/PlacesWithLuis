@@ -14,7 +14,7 @@
         <!--Add Location-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlacesWithLuis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CreateNewPlacesViewController" customModule="PlacesWithLuis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="2015.2" y="133.5832083958021"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Places Tab Bar Controller-->
         <scene sceneID="Cyg-qT-DPf">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ioR-eJ-NQk" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ioR-eJ-NQk" customClass="PlacesTabBarController" customModule="PlacesWithLuis" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pb7-gG-Nc3">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -91,7 +91,7 @@
         <!--Places-->
         <scene sceneID="Y1m-cj-gUH">
             <objects>
-                <viewController id="0ll-UX-jUv" sceneMemberID="viewController">
+                <viewController id="0ll-UX-jUv" customClass="VisitedPlacesViewController" customModule="PlacesWithLuis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mni-Sy-8T1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
